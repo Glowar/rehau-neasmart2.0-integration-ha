@@ -62,6 +62,7 @@ class RehauNeasmart2ZoneClimateEntity(RehauNeasmart2GenericClimateEntity):
         self._attr_current_humidity = None
         self._attr_current_temperature = None
         self._attr_target_temperature = None
+        self._attr_max_temp = 26
 
     async def async_update(self) -> None:
         zone_data = await self._device.get_zone_data()
