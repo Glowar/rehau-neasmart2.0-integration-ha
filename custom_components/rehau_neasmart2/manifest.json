@@ -3,7 +3,7 @@
   "name": "Rehau Neasmart 2.0",
   "integration_type": "hub",
   "codeowners": [
-    "@MatteoManzoni"
+    "@Glowar"
   ],
   "config_flow": true,
   "dependencies": [],
