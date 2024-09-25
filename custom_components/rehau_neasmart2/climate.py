@@ -1,4 +1,11 @@
+from datetime import timedelta
+
+SCAN_INTERVAL = timedelta(seconds=5)
+
 import logging
+
+import async_timeout
+
 from .const import DOMAIN, PRESET_STATES_MAPPING, PRESET_STATES_MAPPING_REVERSE
 from homeassistant.components.climate import ClimateEntity, ClimateEntityFeature, HVACMode
 from homeassistant.helpers.entity import DeviceInfo
