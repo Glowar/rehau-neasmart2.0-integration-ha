@@ -76,7 +76,7 @@ class RehauNeasmart2OutsideTemperatureSensor(RehauNeasmart2GenericSensor):
     _attr_native_unit_of_measurement = UnitOfTemperature.CELSIUS
 
     def __init__(self, device):
-        super().__init__(device)
+        super().__init__(device, update_interval=timedelta(seconds=3))
         self._attr_unique_id = f"{self._device.id}_outside_temperature"
         self._attr_name = f"{self._device.name} Outside Temperature"
 
