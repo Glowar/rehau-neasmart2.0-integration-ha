@@ -1,6 +1,7 @@
 {
   "domain": "rehau_nea_smart",
   "name": "Rehau NEA Smart 2.0",
+   "version": "0.0.3",
   "integration_type": "hub",
   "codeowners": [
     "@Glowar"
@@ -8,11 +9,6 @@
   "config_flow": true,
   "dependencies": [],
   "documentation": "https://github.com/Glowar/rehau-neasmart2.0-integration-ha",
-  "documentation": "https://github.com/Glowar/rehau-neasmart2.0-integration-ha/issues",
-  "homekit": {},
-  "iot_class": "local_polling",
-  "requirements": [],
-  "ssdp": [],
-  "zeroconf": [],
-  "version": "0.0.3"
+  "issue_tracker": "https://github.com/Glowar/rehau-neasmart2.0-integration-ha/issues",
+  "iot_class": "local_polling"
 }
