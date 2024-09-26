@@ -1,4 +1,4 @@
-# Rehau Neasmart 2.0 Integration
+# Rehau NEA Ssmart 2.0 Integration
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/matteomanzoni)
 
 **Integration between Rehau Neasmart 2.0 Climate Control Systems and Homeassistant**
