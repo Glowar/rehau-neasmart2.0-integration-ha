@@ -6,7 +6,7 @@ import logging
 
 import async_timeout
 
-from .const import DOMAIN, PRESET_STATES_MAPPING, PRESET_STATES_MAPPING_REVERSE
+from .const import DOMAIN, PRESET_STATES_CLIMATE_MAPPING_REVERSE, PRESET_STATES_CLIMATE_MAPPING_REVERSE
 from homeassistant.components.climate import ClimateEntity, ClimateEntityFeature, HVACMode
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.const import UnitOfTemperature
@@ -71,7 +71,7 @@ class RehauNeasmart2ZoneClimateEntity(RehauNeasmart2GenericClimateEntity):
                 zone_data.get("relative_humidity") is not None and \
                 zone_data.get("temperature") is not None and \
                 zone_data.get("setpoint") is not None:
-            self._attr_preset_mode = PRESET_STATES_MAPPING_REVERSE[zone_data["state"]]
+            self._attr_preset_mode = PRESET_STATES_CLIMATE_MAPPING_REVERSE[zone_data["state"]]
             self._attr_current_humidity = zone_data["relative_humidity"]
             self._attr_current_temperature = zone_data["temperature"]
             self._attr_target_temperature = zone_data["setpoint"]
@@ -79,7 +79,7 @@ class RehauNeasmart2ZoneClimateEntity(RehauNeasmart2GenericClimateEntity):
             _LOGGER.error(f"Error updating {self._attr_unique_id} thermostat")
 
     async def async_set_preset_mode(self, preset_mode: str):
-        if not await self._device.set_zone_state(PRESET_STATES_MAPPING[preset_mode]):
+        if not await self._device.set_zone_state(PRESET_STATES_CLIMATE_MAPPING[preset_mode]):
             _LOGGER.error(f"Error setting preset mode for {self._attr_unique_id} thermostat")
 
     async def async_set_temperature(self, **kwargs):
