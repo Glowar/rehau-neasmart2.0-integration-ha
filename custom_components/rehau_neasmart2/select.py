@@ -1,6 +1,6 @@
 from datetime import timedelta
 
-SCAN_INTERVAL = timedelta(seconds=10)
+SCAN_INTERVAL = timedelta(seconds=8)
 
 import logging
 
