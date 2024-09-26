@@ -5,10 +5,12 @@ BINARY_STATUSES = {
     0: "Off",
     1: "On"
 }
+
 PRESENCE_STATES = {
     True: "Present",
     False: "Not Present"
 }
+
 PRESET_STATES_MAPPING = {
     "Пользовательский": 0,
     "Принудительно Авто": 4,
@@ -18,6 +20,8 @@ PRESET_STATES_MAPPING = {
     "Принудительно Вечерина": 5,
     "Принудительно Отпуск": 6
 }
+PRESET_STATES_MAPPING_REVERSE = {v: k for k, v in PRESET_STATES_MAPPING.items()}
+
 PRESET_STATES_CLIMATE_MAPPING = {
     "Авто": 4,
     "Обычный": 1,
@@ -27,6 +31,7 @@ PRESET_STATES_CLIMATE_MAPPING = {
     "Отпуск": 6
 }
 PRESET_STATES_MAPPING_REVERSE = {v: k for k, v in PRESET_STATES_MAPPING.items()}
+
 PRESET_CLIMATE_MODES_MAPPING = {
     "Пользовательский": 0,
     "Принудительно Авто": 1,
