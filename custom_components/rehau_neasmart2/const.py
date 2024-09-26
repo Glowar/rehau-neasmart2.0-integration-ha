@@ -30,7 +30,7 @@ PRESET_STATES_CLIMATE_MAPPING = {
     "Вечерина": 5,
     "Отпуск": 6
 }
-PRESET_STATES_CLIMATE_MAPPING_REVERSE = {v: k for k, v in PRESET_STATES_MAPPING.items()}
+PRESET_STATES_CLIMATE_MAPPING_REVERSE = {v: k for k, v in PRESET_STATES_CLIMATE_MAPPING .items()}
 
 PRESET_CLIMATE_MODES_MAPPING = {
     "Пользовательский": 0,
