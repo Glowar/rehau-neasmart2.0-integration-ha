@@ -18,6 +18,14 @@ PRESET_STATES_MAPPING = {
     "Принудительно Вечерина": 5,
     "Принудительно Отпуск": 6
 }
+PRESET_STATES_CLIMATE_MAPPING = {
+    "Авто": 4,
+    "Обычный": 1,
+    "Экономичный": 2,
+    "Режим ожидания": 3,
+    "Вечерина": 5,
+    "Отпуск": 6
+}
 PRESET_STATES_MAPPING_REVERSE = {v: k for k, v in PRESET_STATES_MAPPING.items()}
 PRESET_CLIMATE_MODES_MAPPING = {
     "Пользовательский": 0,
