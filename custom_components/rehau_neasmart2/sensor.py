@@ -1,6 +1,12 @@
 """Platform for sensor integration."""
 
+from datetime import timedelta
+
+SCAN_INTERVAL = timedelta(seconds=9)
+
 import logging
+
+import async_timeout
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.helpers.restore_state import RestoreEntity
