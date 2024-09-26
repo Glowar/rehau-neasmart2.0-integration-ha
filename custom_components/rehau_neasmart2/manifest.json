@@ -1,7 +1,7 @@
 {
   "domain": "rehau_nea_smart",
   "name": "Rehau NEA Smart 2.0",
-   "version": "0.0.3",
+   "version": "0.0.4",
   "integration_type": "hub",
   "codeowners": [
     "@Glowar"
