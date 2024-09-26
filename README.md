@@ -8,9 +8,9 @@ This integration leverages a dedicated add-on to shim the Sysbus protocol (Modbu
 ### How to install
 
 - Add this repository as a HACS custom repository
-- Search for `Rehau Neasmart 2.0` and install it
+- Search for `Rehau NEA Smart 2.0` and install it
 - Restart homeassistant
-- Add the `Rehau Neasmart 2.0` integration
+- Add the `Rehau NEA Smart 2.0` integration
 - Fill out the requested data:
   - Show name for the Climate Control System eg. *Matteo's Home*
   - Address where the add-on is running
