@@ -6,7 +6,7 @@ import logging
 
 import async_timeout
 
-from .const import DOMAIN, PRESET_STATES_CLIMATE_MAPPING_REVERSE, PRESET_STATES_CLIMATE_MAPPING_REVERSE
+from .const import DOMAIN, PRESET_STATES_CLIMATE_MAPPING, PRESET_STATES_CLIMATE_MAPPING_REVERSE
 from homeassistant.components.climate import ClimateEntity, ClimateEntityFeature, HVACMode
 from homeassistant.helpers.entity import DeviceInfo
 from homeassistant.const import UnitOfTemperature
@@ -58,7 +58,7 @@ class RehauNeasmart2ZoneClimateEntity(RehauNeasmart2GenericClimateEntity):
         self._attr_hvac_mode = HVACMode.AUTO
 
         self._attr_preset_mode = None
-        self._attr_preset_modes = list(PRESET_STATES_MAPPING.keys())
+        self._attr_preset_modes = list(PRESET_STATES_CLIMATE_MAPPING.keys())
         self._attr_current_humidity = None
         self._attr_current_temperature = None
         self._attr_target_temperature = None
