@@ -1,4 +1,11 @@
+from datetime import timedelta
+
+SCAN_INTERVAL = timedelta(seconds=10)
+
 import logging
+
+import async_timeout
+
 from .const import DOMAIN, PRESET_STATES_MAPPING, PRESET_CLIMATE_MODES_MAPPING, \
     PRESET_STATES_MAPPING_REVERSE, PRESET_CLIMATE_MODES_MAPPING_REVERSE
 from homeassistant.helpers.entity import DeviceInfo
